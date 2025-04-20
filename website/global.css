@@ -1,0 +1,106 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #180024;
+  color: #fff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main > header {
+  width: calc(100% - 32px);
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #61007F;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.homepage {
+  width: 100px;
+  padding-right: 166px;
+}
+
+.title {
+  width: 266px;
+}
+
+#beans {
+  display: flex;
+  flex-direction: row;
+  width: 266px;
+}
+
+.link {
+  margin-right: 30px;
+}
+
+#discord {
+  display: flex;
+}
+
+#discord > h2 {
+  margin-left: 16px;
+}
+
+#discord > img {
+  width: 36px;
+  height: 36px;
+}
+
+content {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+#bg {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  background-image: url("/assets/banner.png");
+  background-size: cover;
+  background-position: center;
+  height: min(75vw, 100vh);
+}
+
+#wrapper {
+  z-index: 10;
+  width: calc(100% - 32px);
+  height: calc(100% - 32px);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #1119;
+  padding: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+a:visited, a:hover, a:active, a:focus {
+  text-decoration: none;
+  color: white;
+}

@@ -1,0 +1,158 @@
+.team-wrapper {
+    flex: 1;
+    width: 400px;
+    margin-left: 40px;
+    margin-right: 40px;
+    height: 100%;
+    max-height: calc(100% - 100px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.team-wrapper > .team {
+    width: calc(50% - 8px);
+    height: calc(50% - 8px);
+    background-color: #111a;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.team > header {
+    background-color: #222;
+    border: 1px solid #444;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    width: 100%;
+    height: 72px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.player-pool {
+    flex: 1;
+    background-color: #111a;
+    height: 100%;
+    max-height: calc(100% - 100px);
+}
+
+.team > .player {
+    width: calc(100% - 24px);
+    height: min-content;
+    padding: 8px;
+    margin: 8px 4px 0px 4px;
+    background-color: #fff4;
+    user-select: none;
+    border-radius: 4px;
+    display: flex;
+}
+
+.player > #s-tier {
+    width: 24px;
+    height: 24px;
+    border-left: solid 3px aqua;
+    border-right: solid 3px aqua;
+    border-radius: 4px;
+    text-align: center;
+    margin-right: 8px;
+}
+
+.player > #a-tier {
+    width: 24px;
+    height: 24px;
+    border-left: solid 3px yellow;
+    border-right: solid 3px yellow;
+    border-radius: 4px;
+    text-align: center;
+    margin-right: 8px;    
+}
+
+.player > #b-tier {
+    width: 24px;
+    height: 24px;
+    border-left: solid 3px green;
+    border-right: solid 3px green;
+    border-radius: 4px;
+    text-align: center;
+    margin-right: 8px;    
+}
+
+.player > #c-tier {
+    width: 24px;
+    height: 24px;
+    border-left: solid 3px whitesmoke;
+    border-right: solid 3px whitesmoke;
+    border-radius: 4px;
+    text-align: center;
+    margin-right: 8px;    
+}
+
+.player > #d-tier {
+    width: 24px;
+    height: 24px;
+    border-left: solid 3px #333333;
+    border-right: solid 3px #333333;
+    border-radius: 4px;
+    text-align: center;
+    margin-right: 8px;    
+}
+
+.player > .username {
+    flex: 1;
+}
+.player > .point-cost {
+    width: 24px;
+    text-align: center;
+    display: block;
+    flex-shrink: 0;
+}
+.player-pool {
+    display: flex;
+    flex-direction: column;
+}
+.player-pool > header {
+    background-color: #222;
+    border: 1px solid #444;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    width: 100%;
+    height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.player-pool > .inner {
+    width: 100%;
+    display: block;
+    flex: 1;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.player-pool > .inner > .player {
+    width: calc(100% - 38px);
+    height: min-content;
+    padding: 8px 8px 8px 20px;
+    margin: 8px 4px 0px 4px;
+    background-color: #fff4;
+    border: 1px solid #444;
+    user-select: none;
+    border-radius: 4px;
+    display: flex;
+}
+
+.player-pool > .inner > .tier {
+    width: 24px;
+    height: 24px;
+    border-left: solid 2px aqua;
+    border-right: solid 2px aqua;
+    border-radius: 4px;
+    text-align: center;
+    margin-right: 8px;
+}
+.player-pool > .inner > .username {
+    flex: 1;
+}
+
